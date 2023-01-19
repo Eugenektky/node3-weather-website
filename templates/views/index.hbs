@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<header>
+    <link rel="stylesheet" href="/css/style.css">
+</header>
+
+<body>
+    <div class="main-content">   
+        {{>header}}
+    </div>
+
+    <form>
+        <input placeholder="location">
+        <button>Search</button>
+
+    </form>
+    
+    {{!-- if things goes wrong, 2nd para will be empty & 1st para will 
+            contain the error msg--}}
+    {{!-- if things goes will, the 1st para will contain the location
+            & 2nd para contains the forecast --}}
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+</body>
+
+<footer>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</footer>
+
+</html>
